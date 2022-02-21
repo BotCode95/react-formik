@@ -1,0 +1,84 @@
+[
+    {
+        "type": "input",
+        "name": "firstName",
+        "placeholder": "Sop",
+        "label" : "First Name",
+        "value" : "",
+        "validations": [
+            {
+                "type": "required",
+                "description": "Requerido"
+            },
+            {
+                "type" : "minLength",
+                "description": "Minimo de 5 caracteres",
+                "value" : 5
+            }
+        ]
+    },
+    {
+        "type": "input",
+        "name": "lastName",
+        "placeholder": "Sandlow",
+        "label" : "Last Name",
+        "value" : "",
+        "validations": [
+            {
+                "type": "required",
+                "description": "Requerido"
+            },
+            {
+                "type" : "minLength",
+                "description": "Minimo de 5 caracteres",
+                "value" : 5
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "email",
+        "label" : "Email",
+        "value" : "",
+        "validations": [
+            {
+                "type": "required",
+                "description": "Requerido",
+                "value" : 0
+            },
+            
+            {
+                "type" : "email",
+                "description": "debe ser un tipo de dato válido",
+                "value" : 0
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label" : "Favorite Game",
+        "value" : "",
+        "options" : [
+            {
+                "id" : 1,
+                "value" : "FIFA"
+            },
+            {
+                "id" : 2,
+                "value" : "GTAV"
+            },
+            {
+                "id" : 3,
+                "value" : "CallOfDuty World War II"
+            }
+        ],
+        "validations": [
+            {
+                "type": "required",
+                "description": "Requerido"
+            }
+        ]
+    }
+]
